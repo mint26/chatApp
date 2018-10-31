@@ -1,0 +1,9 @@
+.chat-panel{
+    padding: 10px; 
+    height:100%; 
+    border-left: 1px solid gray; 
+}
+
+.chat-screen-panel{
+    height:70%; 
+}

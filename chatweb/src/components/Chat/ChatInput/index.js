@@ -1,14 +1,5 @@
 import React, { Component } from 'react'; 
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupButtonDropdown,
-    Input,
-    Button,
-    DropdownItem,
-    DropdownMenu, 
-    DropdownToggle
- } from 'reactstrap'; 
+import './chatinput.css'; 
 
 class ChatInput extends Component{
 
@@ -37,21 +28,12 @@ class ChatInput extends Component{
 
     render(){
         return (
-            <InputGroup>
-              <InputGroupButtonDropdown addonType="prepend" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
-                <Button outline>Split Button</Button>
-                <DropdownToggle split outline />
-                <DropdownMenu>
-                  <DropdownItem header>Header</DropdownItem>
-                  <DropdownItem disabled>Action</DropdownItem>
-                  <DropdownItem>Another Action</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Another Action</DropdownItem>
-                </DropdownMenu>
-              </InputGroupButtonDropdown>
-              <Input placeholder="and..." />
-              <InputGroupAddon addonType="append"><Button color="secondary">I'm a button</Button></InputGroupAddon>
-            </InputGroup>
+            <div className="container chat-input-panel">
+                <div>
+                    <input type="text" className="col-10"></input>
+                    <button className="col-2 btn-default">Send</button>
+                </div>
+            </div>
         );
     }
     

@@ -1,20 +1,20 @@
 import React,{ Component } from 'react'; 
-import { Container, Row } from 'reactstrap'; 
 import ChatInput from './ChatInput'; 
 import ChatScreen from './ChatScreen'; 
+import './chat.css'; 
 
 class Chat extends Component{
 
     render() {
         return (
-            <Container>
-                <Row>
+            <div className="container chat-panel">
+                <div className="row chat-screen-panel">
                     <ChatScreen></ChatScreen>
-                </Row>
-                <Row>
+                </div>
+                <div className="row">
                     <ChatInput></ChatInput>
-                </Row>
-            </Container>
+                </div>
+            </div>
         );
     }
 

@@ -1,14 +1,14 @@
 import React , { Component } from 'react';
-import { Row } from 'reactstrap';
+import './chatscreen.css'; 
 
 class ChatScreen extends Component
 {
     render () 
     {
         return (
-            <Row>
+            <div className="container chat-screen">
                 Item here       
-            </Row>
+            </div>
         ); 
     }
 }
